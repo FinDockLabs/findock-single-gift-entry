@@ -1,0 +1,23 @@
+<apex:page standardStylesheets="false" lightningStylesheets="true" applyBodyTag="false" docType="html-5.0" standardController="GiftEntry">
+    <apex:includeLightning/>
+    <div style="background-color: #efefef;">
+      <div style="max-width: 90%; margin: 0 auto; padding-top: 20px;">
+        <div class="" style="padding-bottom: 10px;">
+          <div class="slds-col" style="display: flex; justify-content: flex-end;">
+              <input type="button" style="flex:0 0 auto; margin: 0px;" class="btn" value="Done" onclick="window.location = '/lightning/o/GiftEntry/list?filterName=Recent'" />
+          </div>
+        </div>
+        <div id="lightningvf"></div>
+        <script>
+            $Lightning.use("c:GiftEntry", function() {
+              $Lightning.createComponent("c:giftEntryLWC",{},
+                  "lightningvf",
+                  function(cmp) {
+                    
+                  }
+              );
+            });
+        </script> 
+      </div>
+    </div>
+</apex:page>
