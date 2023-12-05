@@ -9,12 +9,10 @@ Although this project has 100% coverage, existing custom code in your environmen
 
 # FinDock for Fundraising: Single Gift Entry
 
-A quick description for what this repo contains:
-- FinDock version of Salesforce Manage Gift Entries flow (cloned & customised)
-- Visualforce Page to override the 'New Gift Entry' button
-- LWC Component and Aura app to run the flow in a Visualfroce page
+The components in this repository can be used to integrate the FinDock MOTO component into the Salesforce Fundraising Single Gift Entry feature.
+To make easy entry of multiple Gift Entries easy and fast, the Flow loops after every entry.
 
-Supporting permissions are included.
+The Salesforce Batch Gift Entry is not supported.
 
 ## Requirements
 
@@ -23,6 +21,13 @@ The prerequisites to deploy this repository are:
 - The FinDock for Fundraising package is installed
 
 ## Full list of components
+
+A quick description for what this repo contains:
+- FinDock version of Salesforce Manage Gift Entries flow (cloned & customised)
+- Visualforce Page to override the 'New Gift Entry' button
+- LWC Component and Aura app to run the flow in a Visualfroce page
+
+Supporting permissions are included.
 
 ```text
 **Aura app**
@@ -42,7 +47,8 @@ pages/NewGiftEntry.page
 ```
 
 ## Installation
-- make sure your user has permissions to all objects referenced by the components in this repository. This includes FinDock permissions and Fundraising permissions.
+
+First make sure your user has permissions to all objects referenced by the components in this repository. This includes FinDock permissions and Fundraising permissions, then use one of the below options to deploy the code.
 - use `sfdx` to deploy a selection of or all components.
 - press the "Deploy to Salesforce" button at the top of this README and then press "Login to Salesforce" in the top right of your screen. Please note, the GitHub Salesforce Deploy Tool is provided open source by [andyinthecloud](http://andyinthecloud.com/category/githubsfdeploy/). No FinDock support is provided.
 - any other deployment method you prefer.

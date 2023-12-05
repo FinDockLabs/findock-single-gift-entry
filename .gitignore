@@ -44,3 +44,6 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+# IDE files
+.idea/
