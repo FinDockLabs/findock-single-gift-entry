@@ -24,7 +24,7 @@ The prerequisites to deploy this repository are:
 
 A quick description for what this repo contains:
 - FinDock version of Salesforce Manage Gift Entries flow (cloned & customised)
-- Visualforce Page to override the 'New Gift Entry' button
+- VisualForce Page to override the 'New Gift Entry' button -> A VisualForce page is used because the Lightning override is already taken by Salesforce
 - LWC Component and Aura app to run the flow in a Visualfroce page
 
 Supporting permissions are included.
@@ -54,8 +54,8 @@ First make sure your user has permissions to all objects referenced by the compo
 - any other deployment method you prefer.
 
 ## Configuration
-- Override the 'New' button on the object 'Gift Entry' and point it to the Visualforce page `NewGiftEntry`
-- Update the flow `Manage Gift Entries FinDock` to use the correct target in the `Take Payment` screen.
+- Override the 'New' button on the object 'Gift Entry' and point it to the VisualForce page `NewGiftEntry`
+- Update the Flow `Manage Gift Entries FinDock` to use the correct target in the `Take Payment` screen.
 - Assign the permission set `FinDock Single Gift Entry` to the right users
 
 
